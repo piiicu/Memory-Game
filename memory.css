@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    display: grid;
+    grid-template: repeat(6, 110px) / repeat(4, 110px);
+}
+.card {
+    background-image: url('img/wild_oliva.png') ;
+    margin: 0.3em;
+    border-radius: 0.5em;
+} 
+.card img {
+    visibility: hidden;
+}
+.card.faceUp img {
+    visibility: visible;
+}
